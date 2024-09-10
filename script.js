@@ -37,17 +37,11 @@ const playGame = (computerChoice, userChoice) => {
         computerDisplay.textContent = computerChoice;
         overlay.classList.add('active');
     }
-    // const resetButton = document.createElement('button');
-    // resetButton.classList.add('action');
-    // resetButton.textContent = 'Reset';
-    // console.log(resetButton);
-    // keyBoard.removeChild(playBtn);
-    // keyBoard.appendChild(resetButton); 
+   
     resetButton.addEventListener('click', () => {
         computerDisplay.textContent = '-';
         userDisplay.textContent = '-';
-    //     keyBoard.removeChild(resetButton);
-    // keyBoard.appendChild(playBtn);
+    
     })
 }
 
